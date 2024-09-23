@@ -1,0 +1,96 @@
+@import "../../../assets/scss/styles";
+@import "../../../assets/scss/breakpoints";
+
+.footer {
+  background-color: $color-complementary-beige;
+
+  img {
+    width: 165px;
+    height: 70px;
+  }
+
+  a {
+    cursor: pointer;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+    padding: 60px 20px;
+    max-width: 1920px;
+    margin: 0 auto;
+
+    .info {
+      @include text-xs-regular;
+      text-align: center;
+      gap: 50px;
+      p,
+      h2 {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .footer-bottom {
+    @include text-sm-bold;
+    padding: 40px;
+    color: $color-white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    justify-content: space-between;
+    background-color: $color-complementary-dark;
+  }
+}
+
+@media (min-width: $breakpoint-xxl) {
+  .footer {
+    background-color: $color-complementary-beige;
+
+    img {
+      width: 332px;
+      height: 110px;
+    }
+
+    .footer-content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 60px 200px;
+
+      .info {
+        @include text-xs-regular;
+        text-align: left;
+
+        p,
+        h2 {
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    .footer-bottom {
+      @include text-sm-bold;
+      padding: 30px 0px;
+      color: $color-white;
+
+      background-color: $color-complementary-dark;
+
+      .footer-bottom-content {
+        width: 100%;
+        max-width: 1920px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 30px 200px;
+      }
+    }
+  }
+}

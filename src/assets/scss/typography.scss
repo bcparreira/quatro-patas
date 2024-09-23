@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+@mixin text-3xl-bold {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 126.1px;
+}
+
+@mixin text-2xl-bold {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 63.05px;
+}
+
+@mixin text-2xl-bold {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60.53px;
+}
+
+@mixin text-2xl-regular {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60.53px;
+}
+
+@mixin text-lg-bold {
+  font-family: "Nunito", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 45.4px;
+}
+
+@mixin text-lg-regular {
+  font-family: "Nunito", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 45.4px;
+}
+
+@mixin text-base-regular {
+  font-family: "Nunito", sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 35.46px;
+}
+
+@mixin text-base-bold {
+  font-family: "Nunito", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 35.46px;
+}
+
+@mixin text-sm-regular-secundary {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30.26px;
+}
+
+@mixin text-sm-regular {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24.55px;
+}
+
+@mixin text-sm-bold {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24.55px;
+}
+
+@mixin text-xs-regular {
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.1px;
+}
+
+@mixin text-xs-bold {
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19.1px;
+}

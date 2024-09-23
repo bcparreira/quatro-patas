@@ -1,0 +1,18 @@
+<div class="modal-overlay" (click)="closeModal()">
+    <div class="modal-content" (click)="$event.stopPropagation()" [ngStyle]="{'background-color': backgroundColor}">
+        <button class="close-btn" (click)="closeModal()">
+            <mat-icon>close</mat-icon>
+        </button>
+
+        <div class="image">
+        <img [src]="modalImage" alt="Imagem" />
+      </div>
+      
+      <div class="content">
+        <h2>{{ modalTitle }}</h2>
+        <p>{{ modalMessage }}</p>
+        
+      </div>
+    </div>
+  </div>
+  

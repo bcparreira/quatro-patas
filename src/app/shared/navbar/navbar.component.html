@@ -1,0 +1,15 @@
+<nav>
+  <div class="content">
+    <a routerLink="/">
+      <img [src]="'../../../assets/images/logo/Logo.png'" alt="Logo" />
+    </a>
+
+    <div class="link" [ngClass]="{ 'open': isMenuOpen }">
+      <a routerLink="/regras">Nossas Regras</a>
+    </div>
+
+    <mat-icon class="hamburger" (click)="toggleMenu()">
+      {{ isMenuOpen ? 'close' : 'menu' }}
+    </mat-icon>    
+  </div>
+</nav>

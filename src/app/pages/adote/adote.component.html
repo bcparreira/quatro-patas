@@ -1,0 +1,19 @@
+<section class="adote-agora">
+    <div class="content">
+      <div class="description">
+        <h2>Adote Agora</h2>
+        <p>Temos vários peludinhos esperando para fazer um lar mais feliz!</p>
+      </div>
+      <div class="image">
+        <img
+          src="../../../assets/images/illustration/AdoptDog2x.png"
+          alt="Imagem de adoção"
+        />
+      </div>
+    </div>
+    
+    <div class="cards">
+      <app-card *ngFor="let pet of pets" [pet]="pet"></app-card>
+    </div>
+  
+</section>

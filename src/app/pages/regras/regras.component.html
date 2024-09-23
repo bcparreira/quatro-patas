@@ -1,0 +1,18 @@
+<section class="rules">
+  <div class="text">
+    <h2>Nossas Regras</h2>
+    <div class="description">
+      <p>Sem sombra de dúvidas queremos o melhor para os nossos peludinhos, portanto queremos esclarecer quais são os requisitos para você ter um novo membro na família:</p>
+    </div>
+    <ul>
+      <li *ngFor="let regra of regras">
+        <img src="../../../assets/images/icon/DogHand2x.png" alt="Marcador de lista" class="list-icon">
+        {{ regra }}
+      </li>
+    </ul>
+    <p>Todo animal merece respeito &lt;3</p>
+  </div>
+  <div class="image">
+    <img src="../../../assets/images/illustration/RulesDog.png" alt="Imagem de regras">
+  </div>
+</section>

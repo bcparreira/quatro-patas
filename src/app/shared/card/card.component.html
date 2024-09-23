@@ -1,0 +1,29 @@
+<div class="card">
+    <img [src]="pet.img" [alt]="pet.name" />
+    <div class="content">
+      <h3>{{ pet.name }}</h3>
+      <p>{{ pet.description }}</p>
+    </div>
+    <div class="buttons">
+      <button
+        class="to-favorite"
+        [ngClass]="{ favorited: isFavorited }"
+        (click)="openFavoritarModal()"
+      >
+        <mat-icon>{{ isFavorited ? 'favorite' : 'favorite_border' }}</mat-icon>
+      </button>
+      <button class="adote-agora-btn" (click)="openAdoteModal()">
+        <p>Adote agora</p>
+      </button>
+  
+      <app-modal
+        *ngIf="showModal"
+        [modalTitle]="modalTitle"
+        [modalMessage]="modalMessage"
+        [modalImage]="modalImage"
+        [backgroundColor]="backgroundColor"
+        (close)="showModal = false"
+      ></app-modal>
+    </div>
+  </div>
+  
